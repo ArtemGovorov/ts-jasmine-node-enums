@@ -1,0 +1,31 @@
+{
+    "extends": "../../configs/base",
+    "compilerOptions": {
+        "declarationDir": "dist/definitions",
+        "outDir": "dist/es5",
+        "baseUrl": "./",
+        "paths": {
+            "@messenger/common": [
+                "../common"
+            ]
+        },
+        "lib": [
+            "es6",
+            "dom"
+        ]
+    },
+    "filesGlob": [
+        "src/**/*.ts",
+        "!node_modules/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "typings/global",
+        "typings/global.d.ts",
+        "dist"
+    ],
+    "compileOnSave": false,
+    "atom": {
+        "rewriteTsconfig": false
+    }
+}
